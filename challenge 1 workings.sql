@@ -10,7 +10,7 @@ FROM salespersons;
 
 -- joining all the tables using inner join
 -- name the table created after joining the tables using the CREATE VIEW statement (named the new joined table car_showroom)
-CREATE VIEW car_showroom AS 
+CREATE VIEW car_showroom AS
 SELECT 
     salespersons.salesman_id, 
     name, 
