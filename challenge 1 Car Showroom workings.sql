@@ -29,7 +29,7 @@ FROM salespersons
     	INNER JOIN cars
    	ON sales.car_id = cars.car_id;
 
--- you can always come back to this statement when you want to refer to the details of the joined table 
+-- you can always come back to this statement when you want to refer to the details of the view 
 SELECT *
 FROM car_showroom
 ORDER BY sale_id;
