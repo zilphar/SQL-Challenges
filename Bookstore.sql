@@ -65,5 +65,18 @@ UNION ALL
 SELECT *
 FROM Books2;  
 
+-- Using INNER JOIN (returns only rows that are common in both Books1 and Books2 depending on the chosen field 'id')
+SELECT *
+FROM Books1 AS B1
+INNER JOIN Books2 AS B2
+ON B1.id = B2.id; 
+
+-- Using LEFT JOIN (Returns all records in the left table (B1) and records similar in both tables based on the chosen shared field (id)) 
+SELECT *
+FROM Books1 AS B1
+LEFT JOIN Books2 AS B2    
+ON B1.id = B2.id;    -- returns 10 rows 
+
+
 
 
